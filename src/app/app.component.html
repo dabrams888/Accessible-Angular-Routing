@@ -1,0 +1,23 @@
+<div className="app-container">
+  <header>
+    <nav aria-label="site">
+      <div className="site-title">React Demo</div>
+      <ul role="list">
+        <li>
+          <a routerLink="/Cats" [state]="{ isNavigating: true }"> Cats </a>
+        </li>
+        <li>
+          <a routerLink="/Dogs" [state]="{ isNavigating: true }"> Dogs </a>
+        </li>
+        <li>
+          <a routerLink="/Dragons" [state]="{ isNavigating: true }">
+            Dragons
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <router-outlet />
+  </main>
+</div>
